@@ -18,6 +18,8 @@ body {
   position: relative;
 }
 
+/* TODO: Set the logo Flex  */
+
 .logo {
   position: absolute;
   top: 0;
@@ -39,13 +41,14 @@ body {
   flex-flow: row wrap;
   /* align-content: center; */
   justify-content: flex-end;
-  align-items: center;
+  align-content: center;
 }
 
 .main-nav__item {
   margin-left: 20px;
   margin-bottom: 10px;
   padding: 10px;
+  align-self: center;
 }
 
 .main-nav__link {
@@ -57,7 +60,7 @@ body {
 
 .main-nav__link:hover {
   border-bottom: 5px solid #05662f;
-  color: #efefef;
+  color: #efefef83;
   transition: all .3s;
 }
 
@@ -71,7 +74,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   /* width: 100%;
   height: 100%; */
 }
@@ -79,40 +82,112 @@ body {
 .section-intro__title {
   text-align: center;
   /* margin: 40px; */
-  color: #fff;
+  color: black;
+  border-bottom: 2px solid #fff;
+  text-shadow: 2px 2px 2px #05662f;
   padding: 10px;
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 23px;
 }
 
 .section-intro__text {
   text-align: center;
-  color: #fff;
+  color: black;
+  text-shadow: 2px 2px 2px #05662f;
   margin-top: 40px;
   padding: 10px;
   font-size: 23px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
-.container,
-.containerTwee {
-  background-color: #47453e;
-  height: 200px;
+.container {
+  background-image: url(img/gar-2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
   max-width: 100%;
+  height: 600px;
+  opacity: 0.6;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 
-.section-overzicht__tekst {}
+.section-overzicht__titel {
+  /* align-self: flex-start; */
+  color: black;
+  border-bottom: 2px solid #fff;
+  text-shadow: 2px 2px 2px #05662f;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+}
 
-.section-overzicht__list {}
+.section-overzicht__tekst {
+  /* align-self: center; */
+  color: black;
+  text-shadow: 2px 2px 2px #05662f;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+}
 
-.section-overzicht {
-  /* display: flex;
-  /* flex: wrap; */
-  /* flex-direction: row; */
-  /* flex-flow: row wrap; */
-  /* justify-content: center; */
-  /* align-content: flex-start; */
+.section-overzicht__item {
+  list-style: none;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 2px 2px 2px #05662f;
+}
+
+.section-custom {
+  background-image: url(img/gar-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 600px;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-custom__titel {
+  color: black;
+  border-bottom: 2px solid #fff;
+  text-shadow: 2px 2px 2px #05662f;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.section-custom__item {
+  list-style: none;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 2px 2px 2px #05662f;
+}
+
+/* OVER ONS */
+
+.over-ons {
+  background-image: url(img/gar-4.jpeg);
+  background-attachment: fixed;
+  background-size: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.main-footer {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
